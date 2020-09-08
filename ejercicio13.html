@@ -62,9 +62,7 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#input').on('blur',function(){
-			//console.log("Hola");
-			let valor = $('#input').val("");
-			if (valor == "")
+			if ($('#input').val() === "")
 				$('#input').val("Texto de sugerencia");
 		});
 	});
